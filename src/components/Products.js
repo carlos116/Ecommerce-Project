@@ -30,29 +30,29 @@ function Products() {
     <>
     <ul className="d-flex justify-content-center pt-3">
       <li className="category-item my-0 mx-3">
-        <a className="category-link" onClick={() => {
+        <p className="category-link" onClick={() => {
           setFilterData(data)
-        }}>All</a>
+        }}>All</p>
       </li>
       <li className="category-item my-0 mx-2">
-        <a className="category-link" onClick={() => {
-          setFilterData(data.filter(item => item.category == "men's clothing"))
-        }}>Men</a>
+        <p className="category-link" onClick={() => {
+          setFilterData(data.filter(item => item.category === "men's clothing"))
+        }}>Men</p>
       </li>
       <li className="category-item my-0 mx-2">
-        <a className="category-link" onClick={() => {
-          setFilterData(data.filter(item => item.category == "women's clothing"))
-        }}>Women</a>
+        <p className="category-link" onClick={() => {
+          setFilterData(data.filter(item => item.category === "women's clothing"))
+        }}>Women</p>
       </li>
       <li className="category-item my-0 mx-2">
-        <a className="category-link" onClick={() => {
-          setFilterData(data.filter(item => item.category == "jewelery"))
-        }}>Jewelry</a>
+        <p className="category-link" onClick={() => {
+          setFilterData(data.filter(item => item.category === "jewelery"))
+        }}>Jewelry</p>
       </li>
       <li className="category-item my-0 mx-2">
-        <a className="category-link" onClick={() => {
-          setFilterData(data.filter(item => item.category == "electronics"))
-        }}>Electronics</a>
+        <p className="category-link" onClick={() => {
+          setFilterData(data.filter(item => item.category === "electronics"))
+        }}>Electronics</p>
       </li>
     </ul>
     <hr className='productshr'/>
